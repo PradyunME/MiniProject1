@@ -2,7 +2,7 @@
 Helper functions start
 
 """
-def is_float(value):
+def isFloat(value):
     try:
         float(value)
         return True
@@ -110,7 +110,7 @@ def updateCourse():
             elif priceInput == "c":
                 price = priceInput
                 break
-            elif not is_float(priceInput):
+            elif not isFloat(priceInput):
                 print("\nInvalid input, try again!\n")
                 continue 
             # input is valid and convert to float
@@ -135,7 +135,7 @@ def updateCourse():
             elif passGradeInput == "c":
                 passGrade = passGradeInput
                 break
-            elif not is_float(passGradeInput):
+            elif not isFloat(passGradeInput):
                 print("\nInvalid input, try again!\n")
                 continue # go back to start
             # convert to float
@@ -339,8 +339,7 @@ def courseStats():
         # check exit
         if EXIT:
             break
-    
-           
+
 
 if __name__ == "__main__":
     menu()
